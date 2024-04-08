@@ -8,6 +8,8 @@
     * conda activate mchatbot
     * pip install -r requirement.txt
     * python setup.py install
+- Run below python file to initialize chroma vector database with pdf chunks, it will take while, be patient
+    * python store_index.py
 - Open app.py (notepad++ or VS Code) and configure port and host (optional) 
 - Run Medical-Chatbot with below command
     * python app.py
