@@ -4,8 +4,11 @@
 - Type anaconda on windows search and open anaconda command prompt
 - Navigate to emedicalchatbotllma2 progect (in step 1) from conda prompt and/by follow below commands
     * cd <basepath>/emedicalchatbotllma2
-    * conda create -p env python=3.11 -y
+    * conda create -n mchatbot python=3.11 -y
+    * conda activate mchatbot
     * pip install -r requirement.txt
-- Open StreamlitAPP.py (notepad++ or VS Code) and configure Response.json file path at line number 11 with appropriate value 
-- Run mcqgen with below command
-    * streamlit run StreamlitAPP.py --server.port 8080
+    * python setup.py install
+- Open app.py (notepad++ or VS Code) and configure port and host (optional) 
+- Run Medical-Chatbot with below command
+    * python app.py
+- By default it will run on http://localhost:8080
